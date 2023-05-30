@@ -1,0 +1,31 @@
+1. import the matplotlib as mp
+import matplotlib as mp
+
+2. then import the pyplot from matplotlib . pyplot is a collection of functions that make matplotlib work like MATLAB.
+from matplotlib import pyplot as plt
+
+3.Now slice the no of  elements you want
+slices = [40,60,20,35]
+
+4.add labels to them
+labels = ["forty","sixty","twenty","thirtyfive"]
+
+5.colors you can write any color or use hex values
+colors = ["blue","orange","yellow","green"]
+
+6.explode =  used to explode the pie chart. If specified, it must be an array with one value representing a value for each wedge of the pie chart.
+explode = [0.0,0,0.1,0]
+
+7.shadow :- it will shadow to you
+shadow = True
+
+8.wedgeprops : used to color the outline of the pie chart .here it is green
+
+9.startangle can adjust your angel view , here it is 0 degree
+ startangle = 0
+
+10.now use pie to plot all the names.
+plt.pie(slices,labels = labels,explode= explode,shadow =True, startangle = 0,autopct = '%1.1F%%',wedgeprops={'edgecolor':'green'})
+
+#output
+
